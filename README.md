@@ -1,6 +1,6 @@
 # FP pattern
 
-Lern functional programming patterns
+Learn functional programming patterns
 
 ## License
 
