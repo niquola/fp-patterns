@@ -2,13 +2,12 @@
 
 ;; wrapper function is heigh-oreder function
 ;; wich take wrapped function & optionaly config
-;; and return wrapping lambda (which can shortcat chain)
+;; and return wrapping lambda (which can short shortcircuit the chain)
 
 (defn wrap-one [handler]
   (fn [params]
     (let
-      [res (handler
-             (conj params :one-down))]
+      [res (handler (conj params :one-down))]
       (conj res :one-up))))
 
 (defn wrap-two [handler]
